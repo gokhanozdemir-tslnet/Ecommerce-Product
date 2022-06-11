@@ -7,6 +7,9 @@ import "./Product.style.scss";
 
 const Product = () => {
   const { products, loading, error } = useSelector(getProducts);
+  var x = useSelector(getProducts);
+  console.log("****page*****");
+  console.log(x);
 
   const dispatch = useDispatch();
 
